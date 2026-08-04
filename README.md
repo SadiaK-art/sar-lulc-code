@@ -1,10 +1,10 @@
-# Land Use Land Cover Segmentation Using Sentinel-1A SAR Data
+## Land Use Land Cover Segmentation Using Sentinel-1A SAR Data
 
 This repository contains the source code for my undergraduate thesis titled  
 **"Land Use Land Cover Segmentation using Synthetic Aperture Radar Data on Dhaka Division, Bangladesh"**. 
 Published: Sadia Khan, et al. "Land use land cover segmentation using synthetic aperture radar data on Dhaka division, Bangladesh", Proc. SPIE 13734, Eighth International Conference on Machine Vision and Applications (ICMVA 2025), 1373407 (1 Aug 2025); https://doi.org/10.1117/12.3079561
 The project leverages **Sentinel-1A Synthetic Aperture Radar (SAR)** imagery to segment land cover types in the Dhaka region using deep learning models like **U-Net** and **DeepLabV3+**.
-The full publication can be found here: https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13734/1373407/Land-use-land-cover-segmentation-using-synthetic-aperture-radar-data/10.1117/12.3079561.full 
+
 ---
 
 ## Project Motivation
