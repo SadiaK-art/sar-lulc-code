@@ -6,14 +6,14 @@ The project leverages **Sentinel-1A Synthetic Aperture Radar (SAR)** imagery to 
 
 ---
 
-## 🌾 Project Motivation
+## Project Motivation
 
 In Bangladesh, rice is the staple food and a key contributor to the national economy. However, the monsoon season overlaps with major rice cultivation periods, creating cloud cover that hampers optical satellite imaging.  
 To overcome this, **SAR imagery** is used since it can **penetrate clouds** and operate in **all weather conditions**, enabling year-round monitoring of agricultural land.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 
 - Use **Sentinel-1A SAR data** to segment land into meaningful classes (e.g., water, forest, farmland)
 - Compare segmentation performance with benchmark studies using Sentinel-2A (optical imagery)
@@ -21,7 +21,7 @@ To overcome this, **SAR imagery** is used since it can **penetrate clouds** and 
 
 ---
 
-## 🔄 Methodology Overview
+## Methodology Overview
 
 The end-to-end workflow followed in this project:
 
@@ -35,27 +35,27 @@ The end-to-end workflow followed in this project:
 
 ---
 
-## 🧠 Models Used
+## Models Used
 
 - **U-Net**: A CNN-based architecture widely used for biomedical and satellite image segmentation.
 - **DeepLabV3+** with **MobileNetV2** backbone: Used for lightweight, high-resolution semantic segmentation.
 
 ---
 
-## 🗃️ File Overview
+## File Overview
 
 ### `sar_patches_maker.py`
 - Preprocesses SAR + annotated Bing images into 512×512 patches using the `patchify` library
 - Saves patch datasets for model training
 
-### `updated_final_sp_code.py`
+### `sar-lulc-code.py`
 - Trains a **U-Net** model using TensorFlow/Keras
 - Applies class reweighting and a combination of **Dice Loss** and **Focal Loss**
 - Outputs segmentation results and evaluation metrics
 
 ---
 
-## 🌍 Classes
+## Classes
 
 The annotated dataset includes five land cover classes:
 
@@ -69,7 +69,7 @@ The annotated dataset includes five land cover classes:
 
 ---
 
-## 📊 Evaluation Metrics
+## Evaluation Metrics
 
 - **Accuracy**
 - **Intersection over Union (IoU)**
@@ -79,7 +79,7 @@ The annotated dataset includes five land cover classes:
 
 ---
 
-## 📦 Requirements
+## Requirements
 
 Install packages via pip:
 
@@ -94,7 +94,7 @@ If using Google Colab, some of these may already be available.
 
 ---
 
-## 📍 Study Area
+## Study Area
 
 - **Location:** Dhaka Division, Bangladesh  
 - **SAR Data:** Sentinel-1A (VV and VH bands, GRD product)  
@@ -102,7 +102,7 @@ If using Google Colab, some of these may already be available.
 
 ---
 
-## 📈 Key Results
+## Key Results
 
 | Model         | Mean Accuracy | Mean IoU | Mean F1 Score |
 |---------------|---------------|----------|----------------|
@@ -111,7 +111,7 @@ If using Google Colab, some of these may already be available.
 
 ---
 
-## ✍️ Author
+## Author
 
 **Sadia Khan**  
 Undergraduate Thesis, Department of Computer Science & Engineering  
